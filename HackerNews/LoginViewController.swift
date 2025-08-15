@@ -2,27 +2,20 @@
 //  LoginViewController.swift
 //  HackerNews
 //
-//  Created by Tejasv Singh on 8/13/25.
+//  Created by Tejasv Singh on 8/15/25.
 //
 
 import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func loginClicked(_ sender: UIButton) {
-        
-    }
-    
-    
+
     /*
     // MARK: - Navigation
 

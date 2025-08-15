@@ -1,4 +1,11 @@
 //
+//  IntToStringTest.swift
+//  HackerNews
+//
+//  Created by Tejasv Singh on 8/15/25.
+//
+
+//
 //  HackerNewsTests.swift
 //  HackerNewsTests
 //
@@ -8,38 +15,36 @@
 import XCTest
 @testable import HackerNews
 
-final class HackerNewsTests: XCTestCase {
-    var objCalculator: Calculator?
+final class IntToStringTest: XCTestCase {
+    var objIntToString: IntToString?
 
     override func setUpWithError() throws {
-        objCalculator = Calculator()
+        objIntToString = IntToString()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
-        objCalculator = nil
+        objIntToString = nil
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     
-        func testSum(){
-            let sumValue = objCalculator?.sum(10, 20)
-            XCTAssertEqual(sumValue, 30)
+        func test15(){
+            let testValue = objIntToString?.NumToString(60)
+            XCTAssertEqual(testValue, "FizzBuzz")
         }
-        func testSubtraction(){
-            let subtractionValue = objCalculator?.sub(a: 10, b: 20)
-            XCTAssertEqual(subtractionValue, -10)
-        }
-        func testMultiplication(){
-            let multiplicationValue = objCalculator?.multiply(a: 10, b: 20)
-            XCTAssertEqual(multiplicationValue, 200)
-        }
-        func testDivision(){
-            let divisionValue = objCalculator?.divide(a: 10, b: 2)
-            XCTAssertEqual(divisionValue, 5)
-            let divisionValue1 = objCalculator?.divide(a: 10, b: 0)
-            XCTAssertEqual(divisionValue1, 0)
-        }
+    func test3(){
+        let testValue = objIntToString?.NumToString(9)
+        XCTAssertEqual(testValue, "Fizz")
+    }
+    func test5(){
+        let testValue = objIntToString?.NumToString(40)
+        XCTAssertEqual(testValue, "Buzz")
+    }
+    func testNone(){
+        let testValue = objIntToString?.NumToString(11)
+        XCTAssertEqual(testValue, "11")
+    }
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.

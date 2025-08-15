@@ -1,5 +1,5 @@
 //
-//  CreateAccountViewController.swift
+//  ForgotPasswordViewController.swift
 //  HackerNews
 //
 //  Created by Tejasv Singh on 8/15/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
