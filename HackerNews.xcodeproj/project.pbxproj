@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		A91A987C2E4FA00D0040BE61 /* Untitled.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A987B2E4F9FFF0040BE61 /* Untitled.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		A91A982E2E4CF3DA0040BE61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,7 +27,6 @@
 		A91A98172E4CF3D90040BE61 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91A982D2E4CF3DA0040BE61 /* HackerNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91A98372E4CF3DA0040BE61 /* HackerNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A91A987B2E4F9FFF0040BE61 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,7 +88,6 @@
 		A91A980E2E4CF3D90040BE61 = {
 			isa = PBXGroup;
 			children = (
-				A91A987B2E4F9FFF0040BE61 /* Untitled.swift */,
 				A91A98192E4CF3D90040BE61 /* HackerNews */,
 				A91A98302E4CF3DA0040BE61 /* HackerNewsTests */,
 				A91A983A2E4CF3DA0040BE61 /* HackerNewsUITests */,
@@ -255,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91A987C2E4FA00D0040BE61 /* Untitled.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
