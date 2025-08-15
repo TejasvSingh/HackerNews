@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign Up View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="WzF-tW-nzS" kind="show" id="UKR-sv-dLC"/>
+                                    <segue destination="WzF-tW-nzS" kind="show" id="w3b-bg-K31"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to HackerNews!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zac-4j-z0R">
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="83.206106870229007" y="-536.61971830985919"/>
         </scene>
-        <!--Create Account View Controller-->
+        <!--View Controller-->
         <scene sceneID="oN7-VX-RM5">
             <objects>
-                <viewController id="r5y-Ju-4cW" customClass="CreateAccountViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r5y-Ju-4cW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dlw-Q1-dbu" customClass="ADBannerView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
         <!--Login View Controller-->
         <scene sceneID="Upo-lA-gyg">
             <objects>
-                <viewController id="WzF-tW-nzS" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="WzF-tW-nzS" customClass="LoginViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPo-mf-MSw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,6 +214,10 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="WzF-tW-nzS" eventType="touchUpInside" id="xiP-Xu-f0D"/>
+                                    <action selector="loginClicked:" destination="WzF-tW-nzS" eventType="touchUpInside" id="ctm-T4-bYU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login To Your Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDn-o2-BQW">
                                 <rect key="frame" x="0.0" y="162" width="393" height="71"/>
@@ -303,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="-843.51145038167931" y="-536.61971830985919"/>
         </scene>
-        <!--Forgot Password View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="SBN-sd-cm6">
             <objects>
-                <viewController id="xjg-F1-Ud7" customClass="ForgotPasswordViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xjg-F1-Ud7" customClass="LoginViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IXX-cU-MLS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,6 +323,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Send OTP"/>
                                 <connections>
+                                    <action selector="login:" destination="xjg-F1-Ud7" eventType="touchUpInside" id="umH-Cx-zhy"/>
+                                    <action selector="loginClicked:" destination="xjg-F1-Ud7" eventType="touchUpInside" id="ggM-xt-32b"/>
                                     <segue destination="edc-yY-K4z" kind="show" id="j6L-3q-wkh"/>
                                 </connections>
                             </button>
@@ -368,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="1814.5038167938931" y="-967.6056338028169"/>
         </scene>
-        <!--Verification View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="g7Z-4a-Ehe">
             <objects>
-                <viewController id="edc-yY-K4z" customClass="OTPVerificationViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="edc-yY-K4z" customClass="LoginViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cZz-PP-p7U">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,6 +390,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Continue"/>
                                 <connections>
+                                    <action selector="login:" destination="edc-yY-K4z" eventType="touchUpInside" id="Kac-oQ-j1o"/>
+                                    <action selector="loginClicked:" destination="edc-yY-K4z" eventType="touchUpInside" id="0c8-u3-D15"/>
                                     <segue destination="X9J-tn-1nR" kind="show" id="rUo-wP-vju"/>
                                 </connections>
                             </button>
@@ -463,11 +471,11 @@
             </objects>
             <point key="canvasLocation" x="2832.8244274809158" y="-937.32394366197184"/>
         </scene>
-        <!--Create Password View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="fHc-9b-tM9">
             <objects>
-                <viewController id="X9J-tn-1nR" customClass="CreatePasswordViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="61T-Vf-b8Y" customClass="NewPasswordViewController">
+                <viewController id="X9J-tn-1nR" customClass="LoginViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61T-Vf-b8Y">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -479,6 +487,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reset Password"/>
                                 <connections>
+                                    <action selector="login:" destination="X9J-tn-1nR" eventType="touchUpInside" id="tOJ-9n-jZO"/>
+                                    <action selector="loginClicked:" destination="X9J-tn-1nR" eventType="touchUpInside" id="mFX-74-c8n"/>
                                     <segue destination="wVa-fn-hWU" kind="show" id="7ZQ-ce-oB5"/>
                                 </connections>
                             </button>
@@ -542,10 +552,10 @@
             </objects>
             <point key="canvasLocation" x="3661.8320610687019" y="-937.32394366197184"/>
         </scene>
-        <!--Password Changed View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="iNg-ur-grT">
             <objects>
-                <viewController id="wVa-fn-hWU" customClass="PasswordChangedViewController" sceneMemberID="viewController">
+                <viewController id="wVa-fn-hWU" customClass="LoginViewController" customModule="HackerNews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U3c-eM-HSQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,6 +567,10 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back to Login"/>
+                                <connections>
+                                    <action selector="login:" destination="wVa-fn-hWU" eventType="touchUpInside" id="hCM-sa-byW"/>
+                                    <action selector="loginClicked:" destination="wVa-fn-hWU" eventType="touchUpInside" id="Q2X-v2-lzI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password Changed!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP9-gb-fIE">
                                 <rect key="frame" x="0.0" y="238" width="393" height="94"/>
