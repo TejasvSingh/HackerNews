@@ -15,7 +15,15 @@ class CreatePasswordViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func CreatePasswordAction(_ sender: Any) {
+        navigateToNextScreen()
+    }
+    func navigateToNextScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "PasswordChangedViewController") as? PasswordChangedViewController{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     /*
     // MARK: - Navigation
 

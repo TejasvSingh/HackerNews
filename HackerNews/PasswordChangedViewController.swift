@@ -15,7 +15,16 @@ class PasswordChangedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func backToLoginAction(_ sender: Any) {
+        navigateToNextScreen()
+    }
+    func navigateToNextScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

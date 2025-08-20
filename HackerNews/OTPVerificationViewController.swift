@@ -11,10 +11,19 @@ class OTPVerificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+                // Do any additional setup after loading the view.
     }
     
+    @IBAction func OTPVerificationAction(_ sender: Any) {
+        navigateToNextScreen()
+    }
+    
+    func navigateToNextScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "CreatePasswordViewController") as? CreatePasswordViewController{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
     /*
     // MARK: - Navigation
