@@ -27,7 +27,7 @@ class SignUpViewController: UIViewController {
     
     func navigateToNextScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController{
+        if let vc = storyboard.instantiateViewController(withIdentifier: "LoginController") as? LoginController{
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
