@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
           }
     func navigateToNextScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as? ForgotPasswordViewController{
+        if let vc = storyboard.instantiateViewController(withIdentifier: "TableViewController") as? TableViewController{
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
